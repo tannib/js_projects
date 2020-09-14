@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #fdc910, #f8dc06);
+
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.icon {
+  position: absolute;
+}
+
+/* -------- HEADER ---------- */
+
+.header {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.header > h1 {
+  margin-bottom: -15px;
+  font-weight: 800;
+  font-size: 38px;
+}
+
+.header > p {
+  font-size: 18px;
+}
+
+/* -------- HEADER ---------- */
+
+/* -------- PROJECTS GRID ---------- */
+
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.projects__container a,
+.projects__container a:visited,
+.projects__container a:hover,
+.projects__container a:active {
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 1100px) {
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .projects__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* -------- PROJECTS GRID ---------- */
+
+/* -------- SINGLE PROJECT ---------- */
+
+.project {
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px -9px rgba(0, 0, 0, 0.75);
+  transition: transform 0.2s ease-in;
+  cursor: pointer;
+  background-color: #fdfdfd;
+}
+
+.project:hover {
+  transform: scale(1.07);
+}
+
+.project > img {
+  object-fit: cover;
+  /* min-width: 300px; */
+  min-height: 200px;
+  max-height: 259.55px;
+  width: 100%;
+}
+
+.project__info {
+  margin-top: -9px;
+  padding: 20px;
+}
+
+.project__info > h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project__info > h4 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* -------- SINGLE PROJECT ---------- */
