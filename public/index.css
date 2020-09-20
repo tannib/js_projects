@@ -63,6 +63,18 @@ body {
   .projects__container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .icon {
+    width: 50px;
+  }
+
+  .header {
+    margin-top: 30px;
+  }
+
+  .header h1 {
+    font-size: 33px;
+  }
 }
 
 /* -------- PROJECTS GRID ---------- */
